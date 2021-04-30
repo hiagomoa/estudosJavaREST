@@ -1,7 +1,5 @@
 package com.example.aprender.usecases;
 
-import com.example.aprender.Entity.User;
-import com.example.aprender.controller.models.UserRequest;
 import com.example.aprender.gateway.UserGateway;
 
 public class DeleteUser {

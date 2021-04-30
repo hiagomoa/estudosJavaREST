@@ -1,7 +1,7 @@
 package com.example.aprender.controller;
 
 
-import com.example.aprender.Entity.User;
+import com.example.aprender.entity.User;
 import com.example.aprender.controller.models.UserRequest;
 import com.example.aprender.controller.models.UserResponse;
 import com.example.aprender.usecases.CreateUser;
@@ -65,7 +65,6 @@ public class UserController {
 
     @DeleteMapping(value = "/{id}")
     public ResponseEntity deleteUser(@PathVariable int id) {
-
         try {
             deleteUser.execute(id);
             return new ResponseEntity<>(HttpStatus.OK);

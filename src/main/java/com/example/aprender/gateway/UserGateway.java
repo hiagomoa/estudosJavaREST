@@ -1,6 +1,6 @@
 package com.example.aprender.gateway;
 
-import com.example.aprender.Entity.User;
+import com.example.aprender.entity.User;
 import com.example.aprender.controller.models.UserRequest;
 
 public interface UserGateway {

@@ -1,0 +1,17 @@
+CREATE TABLE mydb.endereco(
+	idendereco int primary key auto_increment,
+	rua varchar(30) not null,
+	bairro varchar(30) not null,
+	cidade varchar(30) not null,
+	estado varchar(2) not null,
+	id_user int unique,
+	foreign key(id_user)
+	references mydb.user(id)
+)
+
+INSERT into mydb.endereco values (null, "rua xxx", "bairro a", "monte azul", "MG", 2)
+
+SELECT mydb.`user`.name, mydb.`user`.id, mydb.`user`.telefone,
+	mydb.endereco.bairro
+	from mydb.`user`
+	inner join mydb.endereco on id_user = 2

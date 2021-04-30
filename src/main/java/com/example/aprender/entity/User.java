@@ -1,4 +1,4 @@
-package com.example.aprender.Entity;
+package com.example.aprender.entity;
 
 public class User {
 
